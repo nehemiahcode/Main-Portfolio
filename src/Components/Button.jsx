@@ -27,7 +27,7 @@ function Button({ children }) {
         className="button px-10 py-3 w-[170px]  rounded-md shadow-md laptop:hidden flex dark:bg-purple-800 text-white bg-[#4F46E5]"
         onClick={handleClick}
       >
-        {children}
+             <a href="#contact"> {children}</a>
       </button>
     </div>
   );
@@ -54,12 +54,13 @@ export function Button2({ children }) {
   return (
     <div>
       <button
+   
           type="button"
         ref={buttonRef}
         className="button px-10 py-3 w-[170px]  laptop:flex hidden  rounded-md shadow-md  dark:bg-purple-800 text-white bg-[#4F46E5] "
         onClick={handleClick}
       >
-        {children}
+            <a href="#contact"> {children}</a>
       </button>
     </div>
   );

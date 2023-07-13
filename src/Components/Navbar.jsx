@@ -83,7 +83,7 @@ function Navbar() {
           ref={MenuRef}
           className={` text-black  dark:text-zinc-300 
           dark:bg-black shadow-lg px-5 pt-16 laptop:p-0  w-[70%] 
-           tablet:w-[60%] mini-laptop:w-[30%] large-laptop:w-auto absolute flex flex-col
+           tablet:w-[60%] mini-laptop:w-[30%] large-laptop:w-auto fixed flex flex-col
             gap-5 laptop:flex-row z-[999999] opacity-100 laptop:z-0 laptop:shadow-none laptop:top-auto ${
               navbarisopen
                 ? "left-0 laptop:left-auto"
@@ -99,23 +99,23 @@ function Navbar() {
               <a href={items.Url}> {items.Texts}</a>
             </li>
           ))}
-          <Button>Hire me</Button>
+          <Button>Intrested?</Button>
         </ul>
 
         {navbarisopen && (
           <div className=" dark:bg-[rgba(0,0,0,0.96)] laptop:hidden transition-all opacity-25 fixed inset-0  w-full "></div>
         )}
-        <digitv className=" flex items-center justify-normal  gap-4">
-          <Button2>Hire me</Button2>
+        <div className=" flex items-center justify-normal  gap-4">
+          <Button2>Intrested?</Button2>
           <div
             onClick={() => setDarkMode(getOtherOption(darkmode).text)}
-            className={` h-10 w-10 flex justify-center laptop:cursor-pointer items-center text-4xl rounded-full`}
+            className={`  flex justify-center laptop:cursor-pointer items-center  rounded-full`}
           >
             <span
-              className={`text-black duration-500 ${
+              className={`text-black duration-500 flex items-center ${
                 darkmode === "light"
                   ? " text-black font-extrabold  text-3xl"
-                  : " text-yellow-500   font-semibold text-3xl"
+                  : " text-yellow-500   font-semibold text-[1.6rem]"
               }`}
             >
               {darkmode === "light" ? Toggle[0].icon : Toggle[1].icon}
@@ -130,7 +130,7 @@ function Navbar() {
               name={`${navbarisopen ? "close-outline" : "menu-outline"}`}
             ></ion-icon>
           </div>
-        </digitv>
+        </div>
       </header>
     </>
   );
