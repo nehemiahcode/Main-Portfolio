@@ -68,7 +68,7 @@ function Navbar() {
   return (
     <>
       <header
-        className={` flex justify-between items-center  z-[99999]  top-0 border-b-[2px] dark:border-gray-600   py-2 px-3 tablet:px-10 mini-laptop:px-10 h-[80px] large-laptop:px-20 bg-white dark:bg-[rgba(0,0,0,0.96)] w-[100%] left-0 `}
+        className={` flex justify-between items-center relative z-[99999]  top-0 border-b-[2px] dark:border-gray-600   py-2 px-3 tablet:px-10 mini-laptop:px-10 h-[80px] large-laptop:px-20 bg-white dark:bg-[rgba(0,0,0,0.96)] w-[100%] left-0 `}
       >
         <div className=" flex items-center gap-3 large-laptop:gap-4">
           <div className=" bg-[#4F46E5] dark:bg-purple-800 h-12 w-12 rounded-md shadow-md flex justify-center items-center text-white font-bold text-2xl">
@@ -99,11 +99,11 @@ function Navbar() {
               <a href={items.Url}> {items.Texts}</a>
             </li>
           ))}
-          <Button>Intrested?</Button>
+          <Button><p onClick={handleNavbarClick}>Intrested?</p></Button>
         </ul>
 
         {navbarisopen && (
-          <div className=" dark:bg-[rgba(0,0,0,0.96)] laptop:hidden transition-all opacity-25 fixed inset-0  w-full "></div>
+          <div className=" dark:bg-[rgba(155,144,144,0.23)] laptop:hidden transition-all opacity-25 fixed inset-0  w-full "></div>
         )}
         <div className=" flex items-center justify-normal  gap-4">
           <Button2>Intrested?</Button2>
@@ -124,7 +124,7 @@ function Navbar() {
           <div
             ref={IconRef}
             onClick={handleNavbarClick}
-            className="  laptop:hidden text-4xl dark:text-white"
+            className=" flex items-center  laptop:hidden text-4xl dark:text-white"
           >
             <ion-icon
               name={`${navbarisopen ? "close-outline" : "menu-outline"}`}

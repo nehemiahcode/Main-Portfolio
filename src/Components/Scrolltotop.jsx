@@ -26,10 +26,10 @@ import {BsFillArrowUpCircleFill} from "react-icons/bs"
 
         onClick={ScrollToTop}
         className={`h-[50px] w-[50px] ${
-          visibleButton ? "hidden" :"block"
-        } z-[999999]  p-1  flex justify-center items-center active:hover:scale-110 rounded-full bg-blue-700  dark:bg-purple-700  text-white  text-3xl  fixed bottom-[40px] right-[20px]`}
+          visibleButton ? "hidden" :"flex"
+        } z-[9]  p-1  flex justify-center items-center active:hover:scale-110 rounded-full bg-blue-700  dark:bg-purple-700  text-white  text-3xl  fixed bottom-[40px] right-[20px]`}
       >
- 
+
       <BsFillArrowUpCircleFill/>
     </button>
     );
