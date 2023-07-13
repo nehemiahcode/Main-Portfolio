@@ -26,7 +26,7 @@ function Footer() {
   ];
   return (
    <Fade>
-     <footer className=" bg-white dark:bg-[rgb(0,0,0,0.96)]  w-full h-auto py-12 px-10 laptop:px-10 large-laptop:px-20">
+     <footer className="  bg-slate-50 dark:bg-[rgb(0,0,0,0.96)]  w-full h-auto py-10 px-10 laptop:px-10 large-laptop:px-20">
       <h1 className=" font-medium text-3xl py-3 text-center text-blue-800 dark:text-white ">
         Let's Get Social
       </h1>

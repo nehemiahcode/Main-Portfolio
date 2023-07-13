@@ -8,7 +8,7 @@ import { Button2 } from "./Button";
 function Navbar() {
   const [darkmode, setDarkMode] = useState(() => {
     const storedMode = localStorage.getItem("darkmode");
-    return storedMode ? storedMode : "light";
+    return storedMode ? storedMode : "dark";
   });
   const [navbarisopen, setNavbarisOpen] = useState(false);
   const MenuRef = useRef();
@@ -68,7 +68,7 @@ function Navbar() {
   return (
     <>
       <header
-        className={` flex justify-between items-center  z-[99999]  top-0 border-b-[2px] dark:border-gray-600   py-2 px-2 tablet:px-10 mini-laptop:px-10 h-[80px] large-laptop:px-20 bg-white dark:bg-[rgba(0,0,0,0.96)] w-[100%] left-0 `}
+        className={` flex justify-between items-center  z-[99999]  top-0 border-b-[2px] dark:border-gray-600   py-2 px-3 tablet:px-10 mini-laptop:px-10 h-[80px] large-laptop:px-20 bg-white dark:bg-[rgba(0,0,0,0.96)] w-[100%] left-0 `}
       >
         <div className=" flex items-center gap-3 large-laptop:gap-4">
           <div className=" bg-[#4F46E5] dark:bg-purple-800 h-12 w-12 rounded-md shadow-md flex justify-center items-center text-white font-bold text-2xl">
@@ -88,7 +88,7 @@ function Navbar() {
               navbarisopen
                 ? "left-0 laptop:left-auto"
                 : "left-[-1000%] duration-300 laptop:left-auto"
-            } top-0 left-0 laptop:left-auto h-full laptop:h-auto laptop:bg-transparent bg-white laptop:relative`}
+            } top-0 left-0 bottom-0 laptop:left-auto h-full laptop:h-auto laptop:bg-transparent bg-white laptop:relative`}
         >
           {MenuItems.map((items, index) => (
             <li
@@ -105,7 +105,7 @@ function Navbar() {
         {navbarisopen && (
           <div className=" dark:bg-[rgba(0,0,0,0.96)] laptop:hidden transition-all opacity-25 fixed inset-0  w-full "></div>
         )}
-        <div className=" flex items-center  gap-4">
+        <digitv className=" flex items-center justify-normal  gap-4">
           <Button2>Hire me</Button2>
           <div
             onClick={() => setDarkMode(getOtherOption(darkmode).text)}
@@ -114,8 +114,8 @@ function Navbar() {
             <span
               className={`text-black duration-500 ${
                 darkmode === "light"
-                  ? " text-black font-extrabold  text-2xl"
-                  : " text-yellow-500   font-semibold text-xl"
+                  ? " text-black font-extrabold  text-3xl"
+                  : " text-yellow-500   font-semibold text-3xl"
               }`}
             >
               {darkmode === "light" ? Toggle[0].icon : Toggle[1].icon}
@@ -124,13 +124,13 @@ function Navbar() {
           <div
             ref={IconRef}
             onClick={handleNavbarClick}
-            className="  laptop:hidden text-3xl dark:text-white"
+            className="  laptop:hidden text-4xl dark:text-white"
           >
             <ion-icon
               name={`${navbarisopen ? "close-outline" : "menu-outline"}`}
             ></ion-icon>
           </div>
-        </div>
+        </digitv>
       </header>
     </>
   );
