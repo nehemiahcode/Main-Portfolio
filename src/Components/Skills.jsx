@@ -86,7 +86,7 @@ function Skills() {
                 className=" w-[200px]"
               />
               <div className="">
-                <p className=" w-[85%] tablet:w-[60%] laptop:text-xl text-md mini-laptop:w-[100%] leading-normal mx-auto text-black dark:text-white text-center">
+                <p className=" w-[85%] tablet:w-[60%] laptop:text-xl text-xl mini-laptop:w-[100%] leading-normal mx-auto text-black dark:text-white text-center">
                   {skills.text}
                 </p>
               </div>
