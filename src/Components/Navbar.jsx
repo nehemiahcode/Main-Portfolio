@@ -8,7 +8,7 @@ import { Button2 } from "./Button";
 function Navbar() {
   const [darkmode, setDarkMode] = useState(() => {
     const storedMode = localStorage.getItem("darkmode");
-    return storedMode ? storedMode : "dark";
+    return storedMode ? storedMode : "light";
   });
   const [navbarisopen, setNavbarisOpen] = useState(false);
   const MenuRef = useRef();
