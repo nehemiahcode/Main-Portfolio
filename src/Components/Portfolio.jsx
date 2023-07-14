@@ -75,12 +75,12 @@ function Portfolio() {
               {sculpture.text}
             </p>
             <button onClick={handleButtonClick} className=" my-4 bg-[#4b0e68] z-[9999] absolute  dark:bg-slate-900 px-5 py-3 w-[160px]
-             ring-4 ring-white ring-inset   mx-auto left-[24%] laptop:left-[36%]  rounded-md font-medium hover:bg-blue-600">
+             ring-4 ring-white ring-inset   mx-auto left-[28%] laptop:left-[36%]  rounded-md font-medium hover:bg-blue-600">
               <a href={sculpture.Url} title="Preview of Projects">
                 Preview
               </a>
             </button>
-            {showmessage && <div className=" bg-[rgba(0,0,0,0.87)] dark:bg-[rgba(255,255,255,0.8)] dark:text-black top-[150px] large-laptop:left-[34%] mb-3 left-[20%] py-5 px-5 text-white flex items-center justify-center rounded-lg absolute">Sorry you are on it now!</div>}
+            {showmessage && <div className=" bg-[rgba(0,0,0,0.87)] dark:bg-[rgba(255,255,255,0.8)] dark:text-black top-[150px] large-laptop:left-[34%] mb-3 left-[2%] py-5 px-5 text-white flex items-center justify-center rounded-lg absolute">Sorry you are on it now!</div>}
           </div>
           <div className=" flex justify-between w-full laptop:w-[80%]  items-center top-[50%] absolute">
             <button
