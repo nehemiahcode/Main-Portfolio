@@ -6,14 +6,14 @@ import * as yup from "yup";
 
 
 const schema = yup.object({
-  name: yup.string().required("you missed this field"),
+  name: yup.string().required("Cannot be empty!"),
   email: yup
     .string()
-    .required("you missed this field")
+    .required("Cannot be empty!")
     .email("Email is not valid"),
   message: yup
     .string()
-    .required("you missed this field")
+    .required("Cannot be empty!")
     .min(5, "It should be more than 5 characters"),
 });
 
@@ -48,7 +48,7 @@ function Contact() {
 
   return (
     <Fade>
-      <section     id="contact" className=" bg-slate-100 dark:bg-[rgba(0,0,0,0.96)]">
+      <section   id="contact" className=" bg-slate-100 dark:bg-[rgba(0,0,0,0.96)]">
         <h1  className=" text-center px-10 pt-5 pb-2 laptop:text-left dark:text-white text-[#ff2424] font-bold text-3xl laptop:text-5xl">
           Get in touch
         </h1>
@@ -93,12 +93,12 @@ function Contact() {
                       disabled={loading}
                       {...register(inputs.errors)}
                       type={inputs.type}
-                      placeholder="Your name"
+                      placeholder={inputs.placeholder}
                       className=" border-[1px] px-2 text-md font-normal outline-none
                dark:bg-zinc-800
                  placeholder:text-zinc-500  dark:text-white placeholder:font-medium  rounded  border-gray-500 w-[100%] py-3"
                     />
-                    <span className="text-red-600 pt-2 font-medium">
+                    <span className="text-red-600 text-sm pt-2 font-medium">
                       {errors[inputs.errors]?.message}
                     </span>
                   </div>
@@ -110,7 +110,7 @@ function Contact() {
                   placeholder="Your message"
                   className="   px-3 py-2 resize-none dark:text-white  rounded dark:bg-zinc-800 outline-none  placeholder:text-zinc-500 placeholder:font-medium border-[1px] border-gray-500 w-[100%]  h-[155px]"
                 ></textarea>
-                <span className="text-red-600 font-medium">
+                <span className="text-red-600 text-sm font-medium">
                   {errors["message"]?.message}
                 </span>
 
@@ -124,7 +124,7 @@ function Contact() {
                   }  rounded-md my-4 px-3 font-medium text-white py-3 w-[200px]`}
                 >
                   {loading
-                    ? "Processing..."
+                    ? "Submitting..."
                     : // <span className="  animate-spin inline-block text-2xl font-semibold text-white">
                       //   <ion-icon name="refresh-outline"></ion-icon>
                       // </span>
