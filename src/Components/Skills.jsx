@@ -67,11 +67,11 @@ function Skills() {
       id="skills"
       className=" w-full bg-white dark:bg-[rgba(0,0,0,0.96)] laptop:px-20 py-5"
     >
-      <h1 className=" text-center px-10 pt-5 pb-2 laptop:text-left dark:text-white  text-[#4F46E5] font-bold text-4xl laptop:text-5xl">
+      <h1 className=" text-center px-10 pt-5 pb-2 laptop:text-left dark:text-white  text-[#ff2424] font-bold text-4xl laptop:text-5xl">
         {" "}
         Skills
       </h1>
-      <div className=" mx-auto bg-[#4F46E5] w-[180px] h-[5px] laptop:ml-12"></div>
+      <div className=" mx-auto bg-[#ff1a1a] w-[180px] h-[5px] laptop:ml-12"></div>
       <div className=" w-[100%] h-auto bg-white dark:bg-[rgba(0,0,0,0.96)] grid gap-5 grid-cols-1 mini-laptop:px-10 py-10 mini-laptop:grid-cols-2 laptop:grid-cols-3">
         {SkillDetails.map((skills, index) => (
           <Zoom key={index} cascade>
@@ -97,8 +97,8 @@ function Skills() {
 
       <div className=" mx-auto w-full h-auto flex flex-col laptop:flex-row gap-10 items-center py-20 justify-center">
         <Zoom className=" flex justify-center">
-          <div className=" bg-white shadow-slate-300  dark:shadow-black dark:bg-[rgba(0,0,0,0.96)] shadow-xl w-[90%] tablet:max-w-[450px] h-[auto] laptop:max-w-[100%] px-10 py-5">
-            <h1 className=" dark:text-white text-2xl font-semibold pb-4">
+          <div className=" bg-white shadow-slate-300  dark:shadow-black dark:bg-[rgba(26,25,25,0.96)] shadow-xl w-[90%] tablet:max-w-[450px] h-[auto] laptop:max-w-[100%] px-10 py-5">
+            <h1 className=" dark:text-white text-2xl laptop:text-3xl font-semibold pb-4">
               Languages and tools i am familiar with.
             </h1>
 
@@ -107,7 +107,7 @@ function Skills() {
                 <div key={index} className=" flex w-[100%] items-center gap-3">
                   <div
                     title={icons.title}
-                    className=" ring-[3px] ring-slate-300 text-2xl text-sky-900 dark:text-white dark:ring-black cursor-pointer 
+                    className=" ring-[3px] ring-slate-300 text-xl text-sky-600 dark:text-white dark:ring-black cursor-pointer 
                       rounded-full  active:hover:scale-110 inline-flex p-2"
                   >
                     {icons.icon}
@@ -121,7 +121,7 @@ function Skills() {
           </div>
         </Zoom>
        <Zoom className="flex justify-center ">
-       <div className=" bg-white  dark:bg-[rgba(0,0,0,0.96)] shadow-slate-300  dark:shadow-black   shadow-xl w-[90%] h-[250px] mini-laptop: max-w-[300px] px-6 py-5">
+       <div className=" bg-white  dark:bg-[rgba(26,25,25,0.96)] shadow-slate-300  dark:shadow-black   shadow-xl w-[90%] h-[250px] mini-laptop: max-w-[300px] px-6 py-5">
           <h1 className=" dark:text-white text-2xl pb-4 font-semibold">
             The ones i am about to learn
           </h1>
@@ -131,7 +131,7 @@ function Skills() {
                 <div className=" flex items-center gap-3">
                   <div
                     title={icon2.title}
-                    className=" ring-[3px] ring-slate-300 text-2xl text-sky-900 dark:text-white
+                    className=" ring-[3px] ring-slate-300 text-xl text-sky-600 dark:text-white
                      dark:ring-black cursor-pointer active:hover:scale-110 
                      rounded-full inline-flex  p-2 ring-offset-0 "
                   >

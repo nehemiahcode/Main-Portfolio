@@ -12,7 +12,8 @@
   
   .button span {
     position: absolute;
-    background-color: white;
+    background-color: rgba(94, 92, 92, 0.623);
+    opacity: 1;
     width: 100px;
     height: 100px;
     border-radius: 50%;

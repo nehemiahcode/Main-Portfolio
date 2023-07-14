@@ -15,7 +15,7 @@ function Hero() {
           <div className=" py-1 laptop:py-10 w-full mini-laptop:flex mini-laptop:justify-center mini-laptop:flex-col">
             <h1
               className=" px-5 w-[80%] mini-laptop:w-[70%] laptop:px-0 laptop:w-auto mx-auto laptop:m-0 
-          laptop:text-left text-center font-bold laptop:text-4xl text-[#4F46E5] text-3xl  dark:text-white"
+          laptop:text-left text-center font-bold laptop:text-4xl text-[#ff2424] text-3xl  dark:text-white"
             >
               Hi, I am Nehemiah. Nice to meet you.
             </h1>

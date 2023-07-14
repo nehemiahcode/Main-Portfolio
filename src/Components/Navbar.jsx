@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import { BsMoonStarsFill } from "react-icons/bs";
+import { BiSolidMoon } from "react-icons/bi";
 import { BsSunFill } from "react-icons/bs";
 import Button from "./Button";
 import { Button2 } from "./Button";
@@ -37,7 +37,7 @@ function Navbar() {
 
   const Toggle = [
     { icon: <BsSunFill />, text: "light" },
-    { icon: <BsMoonStarsFill />, text: "dark" },
+    { icon: <BiSolidMoon />, text: "dark" },
   ];
   const element = document.documentElement;
   useEffect(() => {
@@ -71,12 +71,9 @@ function Navbar() {
         className={` flex justify-between items-center relative z-[99999]  top-0 border-b-[2px] dark:border-gray-600   py-2 px-3 tablet:px-10 mini-laptop:px-10 h-[80px] large-laptop:px-20 bg-white dark:bg-[rgba(0,0,0,0.96)] w-[100%] left-0 `}
       >
         <div className=" flex items-center gap-3 large-laptop:gap-4">
-          <div className=" bg-[#4F46E5] dark:bg-purple-800 h-12 w-12 rounded-md shadow-md flex justify-center items-center text-white font-bold text-2xl">
+          <div className=" bg-[#ff1616] dark:bg-purple-800 h-12 w-12 rounded-md shadow-md flex justify-center items-center text-white font-bold text-2xl">
             N
           </div>
-          <h1 className=" dark:text-white font-bold text-xl large-laptop:text-3xl">
-            Nehemiah
-          </h1>
         </div>
 
         <ul
@@ -94,7 +91,7 @@ function Navbar() {
             <li
               key={index}
               onClick={handleNavbarClick}
-              className=" text-lg font-semibold "
+              className=" text-lg font-bold text-black laptop:text-red-500 dark:text-white "
             >
               <a href={items.Url}> {items.Texts}</a>
             </li>
@@ -104,27 +101,27 @@ function Navbar() {
 
         {navbarisopen && (
           <div className=" dark:bg-[rgba(155,144,144,0.23)] laptop:hidden transition-all opacity-25 fixed inset-0  w-full "></div>
-        )}
+         )}
         <div className=" flex items-center justify-normal  gap-4">
           <Button2>Intrested?</Button2>
           <div
             onClick={() => setDarkMode(getOtherOption(darkmode).text)}
-            className={`  flex justify-center laptop:cursor-pointer items-center  rounded-full`}
+            className={`  flex justify-center laptop:cursor-pointer ring-gray-200 ring-[.2rem] dark:ring-[rgba(0,0,0,0.34)] dark:p-[0.2rem] items-center  rounded-full`}
           >
             <span
               className={`text-black duration-500 flex items-center ${
                 darkmode === "light"
-                  ? " text-black font-extrabold  text-3xl"
+                  ? " text-[rgba(0,0,0,0.7)] font-extrabold  text-3xl"
                   : " text-yellow-500   font-semibold text-[1.6rem]"
               }`}
             >
-              {darkmode === "light" ? Toggle[0].icon : Toggle[1].icon}
+              {darkmode === "light" ? Toggle[1].icon : Toggle[0].icon}
             </span>
           </div>
           <div
             ref={IconRef}
             onClick={handleNavbarClick}
-            className=" flex items-center  laptop:hidden text-4xl dark:text-white"
+            className=" flex items-center   laptop:hidden text-4xl dark:text-white"
           >
             <ion-icon
               name={`${navbarisopen ? "close-outline" : "menu-outline"}`}

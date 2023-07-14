@@ -24,7 +24,7 @@ function Button({ children }) {
       <button
       type="button"
         ref={buttonRef}
-        className="button px-10 py-3 w-[170px]  rounded-md shadow-md laptop:hidden flex dark:bg-purple-800 text-white bg-[#4F46E5]"
+        className="button px-10 py-3 w-[170px]  rounded-md shadow-md laptop:hidden flex dark:bg-purple-800 text-white bg-[#ff0303]"
         onClick={handleClick}
       >
              <a href="#contact"> {children}</a>
@@ -54,10 +54,9 @@ export function Button2({ children }) {
   return (
     <div>
       <button
-   
           type="button"
         ref={buttonRef}
-        className="button px-10 py-3 w-[170px]  laptop:flex hidden  rounded-md shadow-md  dark:bg-purple-800 text-white bg-[#4F46E5] "
+        className="button px-10 py-3 w-[170px]  laptop:flex hidden  rounded-md shadow-md  dark:bg-purple-700 text-white bg-[#ff0404] "
         onClick={handleClick}
       >
             <a href="#contact"> {children}</a>
@@ -91,7 +90,7 @@ export function ResumeButton({ children }) {
         <button
             type="button"
           ref={buttonRef}
-          className="button px-5 py-3 w-[auto] flex items-center gap-3   rounded-md shadow-md  dark:bg-purple-800 text-white bg-[#4F46E5] "
+          className="button px-5 py-3 w-[auto] flex items-center gap-3   rounded-md shadow-md  dark:bg-purple-800 text-white bg-[#ff1212] "
           onClick={handleClick}
         >
           {children}

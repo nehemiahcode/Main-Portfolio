@@ -40,11 +40,11 @@ function Portfolio() {
       className=" w-full bg-white dark:bg-[rgba(0,0,0,0.96)] h-auto px-4 py-20"
     >
 
-      <h1 className=" text-center px-10 pt-5 pb-2 laptop:text-left dark:text-white  text-[#4F46E5] font-bold text-4xl laptop:text-5xl">
+      <h1 className=" text-center px-10 pt-5 pb-2 laptop:text-left dark:text-white text-[#ff2424] font-bold text-4xl laptop:text-5xl">
         Portfolio
       </h1>
 
-      <div className=" mx-auto bg-[#4F46E5] w-[180px] h-[5px] laptop:ml-12"></div>
+      <div className=" mx-auto bg-[#ff2525] w-[180px] h-[5px] laptop:ml-12"></div>
       <p className=" text-[1.2rem] dark:text-white px-10 text-center laptop:text-left py-2 laptop:w-[50%]">
         Here are some of my recent projects. Use the Button arrows to view
         projects{" "}
@@ -74,13 +74,14 @@ function Portfolio() {
             <p className=" w-[80%] mx-auto text-lg text-center font-normal ">
               {sculpture.text}
             </p>
-            <button onClick={handleButtonClick} className=" my-4 bg-[#4b0e68] z-[9999] absolute  dark:bg-slate-900 px-5 py-3 w-[160px]
-             ring-4 ring-white ring-inset   mx-auto left-[28%] laptop:left-[36%]  rounded-md font-medium hover:bg-blue-600">
+            <button onClick={handleButtonClick} className=" mt-4 bg-[#4b0e68] z-[9999] absolute  dark:bg-slate-900 px-5 py-3 w-[160px]
+             ring-4 ring-white ring-inset   mx-auto  translate-x-[-50%]  rounded-md font-medium hover:bg-blue-600">
               <a href={sculpture.Url} title="Preview of Projects">
                 Preview
               </a>
             </button>
-            {showmessage && <div className=" bg-[rgba(0,0,0,0.87)] dark:bg-[rgba(255,255,255,0.8)] dark:text-black top-[150px] large-laptop:left-[34%] mb-3 left-[2%] py-5 px-5 text-white flex items-center justify-center rounded-lg absolute">Sorry you are on it now!</div>}
+            {showmessage && <div className=" bg-[rgba(0,0,0,0.87)]  dark:bg-[rgba(255,255,255,0.8)] dark:text-black  mb-3 py-5 px-5 
+           text-white flex   mx-auto  translate-x-[0%] translate-y-[-80px] laptop:w-[50%] w-[70%] items-center justify-center rounded-lg ">Sorry you are on it now!</div>}
           </div>
           <div className=" flex justify-between w-full laptop:w-[80%]  items-center top-[50%] absolute">
             <button

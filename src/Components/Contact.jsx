@@ -49,10 +49,10 @@ function Contact() {
   return (
     <Fade>
       <section className=" bg-slate-100 dark:bg-[rgba(0,0,0,0.96)]">
-        <h1 className=" text-center px-10 pt-5 pb-2 laptop:text-left dark:text-white  text-[#4F46E5] font-bold text-3xl laptop:text-5xl">
+        <h1 className=" text-center px-10 pt-5 pb-2 laptop:text-left dark:text-white text-[#ff2424] font-bold text-3xl laptop:text-5xl">
           Get in touch
         </h1>
-        <div className=" mx-auto bg-[#4F46E5] w-[180px] h-[5px] laptop:ml-20 my-2 "></div>
+        <div className=" mx-auto bg-[#ff1919] w-[180px] h-[5px] laptop:ml-20 my-2 "></div>
 
         <section
           id="contact"
