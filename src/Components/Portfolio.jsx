@@ -61,7 +61,7 @@ function Portfolio() {
           On {index + 1} of 5 Projects
         </h1>
         <Zoom>
-        <div className=" flex justify-center w-[98%]  bg-white dark:bg-[rgba(0,0,0,0.96)] tablet:w-[80%] mini-laptop:w-[70%] mini-laptop:h-[400px] laptop:w-[60%]  mx-auto relative">
+        <div className=" flex justify-center w-[100%]  bg-white dark:bg-[rgba(0,0,0,0.96)] tablet:w-[80%] mini-laptop:w-[70%] mini-laptop:h-[400px] laptop:w-[60%]  mx-auto relative">
           <img
             src={sculpture.imageurl}
             alt={sculpture.alt}

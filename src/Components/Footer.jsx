@@ -26,11 +26,11 @@ function Footer() {
   ];
   return (
   
-     <footer className="  bg-slate-50 dark:bg-[rgb(0,0,0,0.96)]  w-full h-auto py-5 px-10 laptop:px-10 large-laptop:px-20">
+     <footer className="  bg-slate-50 dark:bg-[rgb(0,0,0,0.96)]  w-full h-auto py-6 px-10 laptop:px-10 large-laptop:px-20">
       <h1 className=" font-medium text-3xl py-3 text-center text-blue-800 dark:text-white ">
         Let's Get Social
       </h1>
-      <p className=" text-center dark:text-white w-[60%] mx-auto text-lg font-normal">
+      <p className=" text-center dark:text-white  text-lg font-normal">
         Follow me on Github, Linkden, Twitter and Facebook
       </p>
 
